@@ -1,2 +1,2 @@
 # HTTP Server
-A simple HTTP server, writen in pure python.
+A simple HTTP server, writen in pure python. (gzip, keep-alive and ...)
