@@ -9,13 +9,12 @@ class Main:
         self.thread = None
 
     def run(self):
-        self.seself, rver = HttpServer()
+        self.server = HttpServer()
         self.thread = threading.Thread(target=self.server.start)
         self.thread.start()
 
         while True:
             if 'exit'.startswith(input().lower()):
                 exit(1)
-
 
 Main().run()
