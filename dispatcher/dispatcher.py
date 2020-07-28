@@ -8,7 +8,6 @@ class Dispatcher:
     def dispatch(response: HttpResponse):
         print(
             datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S GMT").__str__()
-            + ' \"' + response.request.method + '\"'
             + ' \"' + response.request.first_line + '\"'
             + ' \"' + response.status_code + '\"'
         )
